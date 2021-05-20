@@ -1,0 +1,435 @@
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+nav {
+  display: flex;
+  height: auto;
+  background: #353538;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+}
+
+.nav-toggle {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 30px;
+  display: inline-block;
+  color: #fff;
+  cursor: pointer;
+
+}
+
+.logo {
+  margin: 40px 0 40px 0;
+  color: #fff;
+}
+
+ul {
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 0;
+  display: none;
+}
+
+ul li {
+  list-style-type: none;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 20px;
+  text-align: center;
+  border-bottom-style: solid ;
+  border-bottom-color: #ccc ;
+  border-bottom-width: 1px;
+  padding: 5px 50px;
+}
+
+ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li:first-child {
+  margin-top: 0;
+}
+
+ul li:hover {
+  opacity: 0.5;
+}
+
+.active {
+  display: flex;
+}
+@media screen and (max-width: 1023px) {
+  #example {
+    display: none;
+  }
+
+  .band {
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto;
+     
+    display: grid;
+     
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+  }
+
+  #pc {
+    display: none;
+  }
+
+  #img-covid {
+    opacity: 0;
+  }
+
+  #myInput {
+    margin: 2px 0px 2px 30px;
+  }
+
+  .dataTables_paginate.paging_simple_numbers {
+    display: none;
+  }
+
+  .color h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #FFFFFF;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    letter-spacing: 2px;
+  }
+  .color .owl-stage-outer {
+    padding: 30px 0;
+  }
+  .color .owl-nav {
+    display: none;
+  }
+  .color .owl-dots {
+    text-align: center;
+  }
+  .color .owl-dots span {
+    position: relative;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display: block;
+    background: #fff;
+    border: 2px solid #01b0f8;
+    margin: 0 5px;
+  }
+  .color .owl-dots .active {
+    box-shadow: none;
+  }
+  .color .owl-dots .active span {
+    background: #01b0f8;
+    box-shadow: none;
+    height: 12px;
+    width: 12px;
+    margin-bottom: -1px;
+  }
+  .color .card {
+    background: #fff;
+    box-shadow: 0 8px 30px -7px #c9dff0;
+    margin: 0 20px;
+    padding: 0 10px;
+    border-radius: 20px;
+    border: 0;
+  }
+
+  .color .card .card-img-top {
+    max-width: 100px;
+    border-radius: 50%;
+    margin: 15px auto 0;
+    box-shadow: 0 8px 20px -4px #95abbb;
+    width: 100px;
+    height: 100px;
+  }
+  .color .card h5 {
+    color: #01b0f8;
+    font-size: 21px;
+    line-height: 1.3;
+  }
+  .color .card h5 span {
+    font-size: 18px;
+    color: #666666;
+  }
+  .color .card p {
+    font-size: 18px;
+    color: #555;
+    padding-bottom: 15px;
+  }
+  .color .active {
+    opacity: 0.5;
+    transition: all 0.3s;
+  }
+  .color .center {
+    opacity: 1;
+  }
+  .color .center h5 {
+    font-size: 24px;
+  }
+  .color .center h5 span {
+    font-size: 20px;
+  }
+  .color .center .card-img-top {
+    max-width: 100%;
+    height: 120px;
+    width: 120px;
+  }
+  .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+    outline: 0;
+  }
+
+  .container {
+    background: #353538;
+    padding: 100px 0;
+    margin: 0 auto;
+    width: 90%;
+    display: none;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .owl-carousel.owl-carousel1.owl-theme {
+    display: block;
+    width: 100%;
+    z-index: 1;
+  }
+
+  #price {
+    display: inline-block;
+    position: relative;
+  }
+  #price_2 {
+    right: 0;
+    top: 0;
+    padding: 0 auto;
+    max-width: 100%;
+    color: rgb(234, 87, 113);
+    margin: 0 auto;
+    float: right;
+    margin: 50px 0px 10px 0px;
+  }
+
+  #price_2_short {
+    right: 0;
+    top: 0;
+    padding: 0 30px;
+    max-width: 100%;
+    color: rgb(234, 87, 113);
+    margin: 0 auto;
+    float: right;
+    margin:  50px 0px 10px 0px;
+  }
+
+  #price_2_none {
+    right: 0;
+    top: 0;
+    padding: 0 auto;
+    max-width: 100%;
+    color: rgb(155, 155, 156);
+    margin: 0 auto;
+    float: right;
+    margin: 50px 0px 10px 0px ;
+  }
+ 
+  #mobile_cula, #mobile_sirirat, #mobile_cristian, #mobile_thonburi, #mobile_nakhonpathom, #mobile_wachira, #mobile_naradura
+  , #mobile_protect_muang, #mobile_rachawithi, #mobile_Banphaeo, #mobile_rama, #mobile_princsuvarnabhumi, #mobile_rangsit
+  , #mobile_Seriruk, #mobile_word_Medical, #mobile_paolo_chokchai4, #mobile_paolo_samut, #mobile_paolo_rangsit, #mobile_paolo_phaholyothin
+  , #mobile_paolo_phrapradaeng, #mobile_kasemradinter, #mobile_kasemrad_saraburi, #mobile_kasemrad_sriburin, #mobile_kasemrad_prachachuen
+  , #mobile_kasemrad_bangkae, #mobile_kasemrad_chachoengsao, #mobile_synphaet_srinakarin, #mobile_synphaet_ramintra
+  , #mobile_samitivejhospitals, #mobile_vibhavadi, #mobile_vichaiyut, #mobile_lph, #mobile_ram_hosp, #mobile_med_suandok
+  , #mobile_ram_9, #mobile_phyathai_3, #mobile_phyathai_2, #mobile_bumrungrad, #mobile_bangpakok_9, #mobile_nopparat{
+    right: 0;
+    top: 0;
+    padding: 0px 40px 0px;
+    max-width: 100%;
+    color: #01b0f8;
+    cursor: pointer;
+    /* float: right; */
+    margin: -20px 0px 0px 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: flex-end;
+  }
+
+  .btn.active {
+    padding: 5px 50px;
+  }
+
+  .price {
+    height: 110px;
+  }
+    
+}
+
+@media screen and (min-width: 800px) {
+
+  nav {
+    height: 80px;
+    flex-direction: row;
+  }
+
+  .logo {
+    padding-left: 50px;
+    margin: 0;
+    width: 20%;
+  }
+
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+    flex-direction: row;
+  }
+
+  ul li {
+    display: inline-block;
+    margin: 0 70px 0 0;
+    text-align: left;
+    border-bottom-style: none;
+    padding: 0;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  #mobile {
+    font-size: 100px;
+    display: none;
+  }
+
+  .gtco-testimonials {
+    display: none;
+  }
+
+  .h2 {
+    display: none;
+  }
+
+  .container {
+    background: #353538;
+    padding: 100px 0;
+    margin: 0 auto;
+    width: 90%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  #myInput {
+    display: none;
+  }
+}
+
+.color  {
+  background: #353538;
+  width: 100%;
+}
+
+
+thead, tbody {
+  background: #fff;
+
+}
+
+.color h1 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  text-align: center;
+  align-items: center;
+  padding: 2rem 0 0 0 ;
+}
+
+.color p {
+  color: white;
+  text-align: center;
+  align-items: center;
+  font-size: 1.75rem;
+}
+
+tr #sirirat, #cristian, #cula, #thonburi , #nakhonpathom, #wachira, #naradura, #protect_muang, #rachawithi, #Banphaeo
+, #rama, #princsuvarnabhumi, #rangsit, #Seriruk, #word_Medical, #paolo_chokchai4, #paolo_samut, #paolo_rangsit,#paolo_phaholyothin
+, #paolo_phrapradaeng, #kasemradinter, #kasemrad_saraburi, #kasemrad_sriburin, #kasemrad_prachachuen, #kasemrad_bangkae, #kasemrad_chachoengsao
+, #synphaet_srinakarin, #synphaet_ramintra, #samitivejhospitals, #vibhavadi, #vichaiyut, #lph
+, #ram_hosp, #med_suandok, #ram_9, #phyathai_3, #phyathai_2, #bumrungrad, #bangpakok_9, #nopparat {
+  color:  #1890ff ;
+  cursor: pointer;
+
+}
+
+#example_wrapper {
+  background: #353538;
+  margin: 0 0 0 -40px;
+  width: 106%;
+ 
+}
+
+#hospital, #tel, #province, #zone, #price, #price-none {
+  padding: 20px 0 0 0;
+}
+
+.sorting {
+  background: #fff;
+  font-weight: bold;
+}
+
+
+
+.paginate_button.previous.disabled {
+  margin: 0 5px ;
+}
+
+
+.paginate_button.next {
+  margin: 0 600px;
+}
+
+
+#price {
+  color: rgb(234, 87, 113);
+}
+
+#price-none {
+  color: rgb(155, 155, 156);
+}
+
+.fa.fa-map {
+  margin: 0px 10px 0px 0px;
+}
+
+#cula, #sirirat,  #cristian, #thonburi , #nakhonpathom, #wachira, #naradura, #protect_muang, #rachawithi, #Banphaeo
+, #rama, #princsuvarnabhumi, #rangsit, #Seriruk, #word_Medical, #paolo_chokchai4, #paolo_samut, #paolo_rangsit, #paolo_phaholyothin
+, #paolo_phrapradaeng, #kasemradinter, #kasemrad_saraburi, #kasemrad_sriburin, #kasemrad_prachachuen, #kasemrad_bangkae
+, #kasemrad_chachoengsao, #synphaet_srinakarin, #synphaet_ramintra, #samitivejhospitals, #vibhavadi, #vichaiyut, #lph
+, #ram_hosp, #med_suandok, #ram_9, #phyathai_3, #phyathai_2, #bumrungrad, #bangpakok_9, #nopparat {
+  padding: 15px 0 15px 20px;
+}
+
+#img_covid, #img_covid2, #img_covid3 {
+  width: 5%;
+  background-image: none !important;
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
